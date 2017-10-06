@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <title> RememberThis - Shopping </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src ="language-en.js"></script>
+    <script type="text/javascript" language="javascript" src ="nopcart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+  </head>
+
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="padding:5%;" href="index.html"><img style="height:100%;" src="images/logo.png"/></a>
+      </div>
+  
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li  class="active"><a href="shopping.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	
+<!-- Start Catalogue-->
+  <div class="container">
+    <!-- Product 1 -->
+    <div class="thumbnail col-sm-4 col-xs-6 col-md-3">
+        <img src="images/starter.png" alt="Starter Pack">
+        <div class="caption">
+            <h3 class="text-center">Starter Pack</h3>
+        </div>
+        <div>
+              <form>
+                  
+                      <label for="QUANTITY">Quantity</label>
+                      <input type="text" name = "QUANTITY" class="form-control" onchange = 'this.value=CKquantity(this.value)' value="1" />
+                      <input type="hidden" name="PRICE" value="39.95" />
+                      <input type="hidden" name="NAME" value="Starter" />
+                      <input type="hidden" name="ID_NUM" value="01" />
+                      <input type="hidden" name="SHIPPING" value="5.95" />
+                  
+                      <br>
+                      <label for="ADDITIONALINFO">Select Decade</label>
+                      <select class="form-control" id="ADDITIONALINFO">
+                          <option value="1970s">1970s</option>
+                          <option value="1980s">1980s</option>
+                          <option value="1990s">1990s</option>
+                          <option value="1990s">2000s</option>
+                      </select>
+                      <br>
+                      
+                      <input type="button" class="btn btn-primary center-block" value="Add to Cart" onclick='AddToCart(this.form)'>
+                      
+                  
+              </form>
+        </div>  
+      
+        
+    </div>
+
+    <!-- Product 2 -->
+    <div class="thumbnail col-sm-4 col-xs-6  col-md-3">
+      <img src="images/gift.png" alt="Gift Pack">
+      <div class="caption">
+          <h3 class="text-center">Gift Pack</h3>
+      </div>
+      <div>
+            <form>
+                
+                    <label for="QUANTITY">Quantity</label>
+                    <input type="text" name = "QUANTITY" class="form-control" onchange = 'this.value=CKquantity(this.value)' value="1" />
+                    <input type="hidden" name="PRICE" value="69.95" />
+                    <input type="hidden" name="NAME" value="Gift" />
+                    <input type="hidden" name="ID_NUM" value="02" />
+                    <input type="hidden" name="SHIPPING" value="5.95" />
+                
+                    <br>
+                    <label for="ADDITIONALINFO">Select Decade</label>
+                    <select class="form-control" id="ADDITIONALINFO">
+                        <option value="1970s">1970s</option>
+                        <option value="1980s">1980s</option>
+                        <option value="1990s">1990s</option>
+                        <option value="1990s">2000s</option>
+                    </select>
+                    <br>
+                    
+                    <input type="button" class="btn btn-primary center-block" value="Add to Cart" onclick='AddToCart(this.form)'>
+                    
+                
+            </form>
+      </div>  
+    
+      
+  </div>
+  
+  <!-- Product 3 -->
+  <div class="thumbnail col-sm-4 col-xs-6 col-md-3">
+    <img src="images/collector.png" alt="Collector Pack">
+    <div class="caption">
+        <h3 class="text-center">Collector Pack</h3>
+    </div>
+    <div>
+          <form>
+              
+                  <label for="QUANTITY">Quantity</label>
+                  <input type="text" name = "QUANTITY" class="form-control" onchange = 'this.value=CKquantity(this.value)' value="1" />
+                  <input type="hidden" name="PRICE" value="99.95" />
+                  <input type="hidden" name="NAME" value="Collector" />
+                  <input type="hidden" name="ID_NUM" value="03" />
+                  <input type="hidden" name="SHIPPING" value="5.95" />
+              
+                  <br>
+                  <label for="ADDITIONALINFO">Select Decade</label>
+                  <select class="form-control" id="ADDITIONALINFO">
+                      <option value="1970s">1970s</option>
+                      <option value="1980s">1980s</option>
+                      <option value="1990s">1990s</option>
+                      <option value="1990s">2000s</option>
+                  </select>
+                  <br>
+                  
+                  <input type="button" class="btn btn-primary center-block" value="Add to Cart" onclick='AddToCart(this.form)'>
+                  
+              
+          </form>
+    </div>  
+  
+    
+  </div>
+ 
+ <!-- End Shopping Cart -->
+	
+</div>
+</body>
+
+</html>

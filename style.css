@@ -1,0 +1,103 @@
+body {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+}
+
+#hometext {
+	color:white;
+}
+
+#logonav {
+	position:relative;
+	bottom:10px;
+	right:40px;
+}
+
+.btn {
+  background: #bcc8d1;
+  background-image: -ms-linear-gradient(top, #bcc8d1, #8c969c);
+  background-image: -o-linear-gradient(top, #bcc8d1, #8c969c);
+  background-image: linear-gradient(to bottom, #bcc8d1, #8c969c);
+  -webkit-border-radius: 40;
+  -moz-border-radius: 40;
+  border-radius: 40px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+#homediv {
+	text-align:center;
+	position:absolute;
+	left: 15%;
+	top:50%;
+}
+
+#aboutusheading {
+	text-align:center;
+	color:white;
+	padding-bottom:45px;
+}
+
+#aboutustable {
+	color:white;
+	  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutusimg {
+	width:160px;
+	height:160px;
+}
+
+td {
+	padding:3px;
+}
+.tabledesc {
+	width:200px;
+}
+
+.tablename {
+	font-weight:bold;
+	font-size:20px;
+}
+
+#contactheader {
+	color:white;
+}
+
+.form-horizontal {
+	color:white;
+}
+
+#orderform {
+	text-align:center;
+}
+
+.formwhite {
+	color:white;
+	font-weight:bold;
+}
+
+.cdetailswhite {
+	color:white;
+}
+
+#contactusheading {
+	color:white;
+	text-align:center;
+}
+
+#contactsent {
+	text-align:center;
+	color:white;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
